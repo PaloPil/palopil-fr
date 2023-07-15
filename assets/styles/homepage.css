@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Newsreader&display=swap');
+
+:root {
+    --main-bg-color: #38363F;
+    --main-text-color: #C7C9C0;
+    --footer-color: #1c1b1f;
+}
+
+/*Fonctional*/
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/*Hides scrollbar*/
+
+* {
+    margin: 0;
+    user-select: none;
+}
+
+/*General styles*/
+
+h1 {
+    font: 800 50px 'Newsreader', serif;
+    text-align: center;
+}
+
+h2 {
+    font: 600 38px 'Newsreader', serif;
+    text-align: center;
+}
+
+h3 {
+    font: 600 28px 'League Spartan', sans-serif;
+    text-align: left;
+    margin: 30px 0 10px;
+}
+
+p {
+    font: 400 22px 'League Spartan', sans-serif;
+    text-align: left;
+    line-height: 1.1;
+}
+
+a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Header*/
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 250px;
+}
+
+header h1 {
+    margin: 25px 0 15px;
+}
+
+nav {
+    position: fixed;
+    bottom: 25px;
+    right: 50px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    text-align: center;
+    font-style: italic;
+}
+
+nav h3 {
+    font-style: italic;
+}
+
+/*Main*/
+
+main {
+    margin: 0 10%;
+}
+
+section {
+    margin-bottom: 150px;
+}
+
+/*Footer*/
+
+footer {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer-color);
+}
+
+footer h2 {
+    margin: 15px 0;
+}
+
+footer img {
+    width: 150px;
+}
+
+/*Responsive*/
+
+@media screen and (min-width: 1024px) {
+    main {
+        margin: 0 25%;
+        text-align: center;
+    }
+}

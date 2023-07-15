@@ -1,0 +1,24 @@
+RewriteEngine On
+
+# HTTP request from a proxy
+RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
+
+# Plain HTTP request
+RewriteCond %{HTTP:X-Forwarded-Proto} =""
+RewriteCond %{HTTPS} !=on
+
+# Redirect to HTTPS
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect to language-specific pages
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^$ https://%{HTTP_HOST}/en/ [L,R=301]
+
+RewriteCond %{HTTP:Accept-Language} ^fr [NC]
+RewriteRule ^$ https://%{HTTP_HOST}/fr/ [L,R=301]
+
+# Fallback for unspecified languages
+RewriteRule ^$ https://%{HTTP_HOST}/en/ [L,R=301]
+
+# Define 404 page
+ErrorDocument 404 /404/index.html

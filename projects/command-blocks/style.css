@@ -1,0 +1,42 @@
+body {
+	font-family: sans-serif;
+	text-align: center;
+	background-color: #121212;
+	color: #e1e1e1;
+}
+
+input {
+	background-color: #767676;
+	border-radius: 5px;
+}
+input:nth-child(2) {width: 50%;}
+input::placeholder {
+	color: #b0b0b0;
+}
+
+div {
+	margin: 5px 0;
+}
+
+div#divcommandblocktype>label {
+	font-weight: bold;
+}
+
+select {
+	background-color: #767676;
+}
+button {
+	background-color: #767676;
+	cursor: pointer;
+}
+
+textarea {
+	width: 50%;
+	height: 5em;
+	resize: none;
+	text-align: left;
+	font-family: default;
+	background-color: #1e1e1e;
+	color: lime;
+	border-radius: 5px;
+}
