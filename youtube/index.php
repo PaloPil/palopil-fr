@@ -13,7 +13,7 @@
             window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         </script>
 
-        <meta name="twitter:image" content="https://i.imgur.com/<?php echo $_GET['link']; ?>.png">
+        <meta name="twitter:image" content="https://i.imgur.com/<?php echo $_GET['i']; ?>.png">
     </head> 
     <body> 
         <p>Redirecting to <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a></p>
