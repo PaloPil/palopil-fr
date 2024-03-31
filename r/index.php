@@ -12,11 +12,14 @@
         <script type="text/javascript">
             window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         </script>
+        
+        <?php if (isset($_GET['i']) && $_GET['i']!=""): ?>
+            <meta name="twitter:image" content="https://i.imgur.com/<?php echo $_GET['i']; ?>.png">
+        <?php endif ?>
 
-        <meta name="twitter:image" content="https://i.imgur.com/<?php echo $_GET['i']; ?>.png">
+        
     </head> 
     <body> 
         <p>Redirecting to <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a></p>
     </body>
 </html>
-
