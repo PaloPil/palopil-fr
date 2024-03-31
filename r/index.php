@@ -15,6 +15,8 @@
         
         <?php if (isset($_GET['i']) && $_GET['i']!=""): ?>
             <meta name="twitter:image" content="https://i.imgur.com/<?php echo $_GET['i']; ?>.png">
+        <?php else: ?>
+            <meta name="twitter:image" content="https://i.imgur.com/JKSIDdm.png">
         <?php endif ?>
 
         
